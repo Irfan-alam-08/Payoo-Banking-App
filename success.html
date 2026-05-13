@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo | Login</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <!-- tailwind+daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+
+    <header class="border-b-2 border-gray-300">
+        <section class="w-11/12 mx-auto py-3 flex items-center justify-center">
+            <div class="left flex gap-2 mx-auto">
+                <div class="logo w-[60px] cursor-pointer">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <div class="balance-info">
+                    <h2 class="text-2xl font-bold">$ <span id="balance">4500</span></h2>
+                    <p class="text-neutral/50">Available balance</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <div role="alert" class="alert alert-success">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span>Your request has been processed successfully!</span>
+        <button class="btn btn-sm" onclick="window.location.href='home.html'">Go to Dashboard</button>
+    </div>
+    <section>
+        <div class="w-11/12 mx-auto pt-2 text-center">
+            <h2 class="text-2xl font-bold">Download Our Android Pay<span class="text-primary">oo</span> App Now!</h2>
+        </div>
+    </section>
+
+    <script src="script/cashout.js"></script>
+    <script src="script/common.js"></script>
+</body>
+
+</html>
