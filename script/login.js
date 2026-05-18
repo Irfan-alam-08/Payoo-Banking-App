@@ -6,7 +6,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
     // 3-2. if false => show error message
     const numberInput = document.querySelector('input[placeholder="Enter your number"]');
     const number = numberInput.value;
-    const pinInput = document.querySelector('input[placeholder="Enter 4 digit PIN"]');
+    const pinInput = document.querySelector('input[placeholder="Enter PIN- 1234"]');
     const pin = pinInput.value;
     if (number === "01629863179" && pin === "1234") {
         window.location.href = "home.html";
@@ -26,7 +26,7 @@ document.querySelector('input[placeholder="Enter your number"]').addEventListene
         document.getElementById("login-btn").click();
     }
 });
-document.querySelector('input[placeholder="Enter 4 digit PIN"]').addEventListener("keypress", function (event) {
+document.querySelector('input[placeholder="Enter PIN- 1234"]').addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         // Trigger the login button click event
         document.getElementById("login-btn").click();
